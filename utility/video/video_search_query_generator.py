@@ -453,7 +453,7 @@ import ast
 
 client = groq.Groq(
     # This is the default and can be omitted
-    api_key='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',
+    api_key=os.getenv('GROQ_API_KEY'),
 )
 log_directory = ".logs/gpt_logs"
 
