@@ -3,7 +3,7 @@ import json
 from groq import Groq
 client = Groq(
     # This is the default and can be omitted
-    api_key=os.getenv('GROQ-API-KEY')
+    api_key=os.getenv('GROQ_API_KEY')
 )
 def generate_script(topic):
     prompt = (
